@@ -1,0 +1,79 @@
+.my-header{
+    background: url(../images/psb.jpg) no-repeat 0;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.my-footer{
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    margin-top: 50px;
+}
+
+.my-footer h4 a{
+    font-size: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.my-footer *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
+    margin-top: 0;
+}
+
+.copy p{
+    padding: 1em 0;
+    margin: 0;
+}
+
+#my-section{
+    min-height: 600px;
+}
+
+#my-article-body h1,#my-article-body h2{
+    border-bottom: 2px solid #cccccc;
+}
+
+#my-article-body pre code,#my-article-body pre {
+    overflow-y: hidden;
+}
+
+#my-aside{
+    position: relative;
+    min-height: 200px;
+}
+#my-aside .my-aside{
+    position: fixed;
+    margin-top: 60px;
+    border-right: solid 2px #dddddd;
+    padding-right: 0.5em;
+}
+
+.my-aside ul{
+    padding-left: 1em;
+}
+
+.my-aside>ul>li>a{
+    font-size: large;
+    font-style: oblique;
+    border-left: solid 4px #3399FF;
+    padding-left: 0.45em;
+}
+
+.my-aside a{
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#my-article-icon{
+    position: relative;
+    min-height: 200px;
+}
+#my-article-icon>div {
+    position: fixed;
+    bottom: 50px;
+}
+#my-article-icon a{
+    display: block;
+    margin-bottom: 0.5em;
+}

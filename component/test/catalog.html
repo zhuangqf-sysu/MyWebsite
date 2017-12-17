@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" type="text/html" href="../../head.html">
+    <link rel="import" type="text/html" href="../../head_article.html">
+    <script src="../vue.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../article.js"></script>
+    <script src="../catalog.js"></script>
+</head>
+<body>
+<section class="am-g">
+    <div id="my-aside" class="am-u-lg-3 am-u-md-4 am-hide-sm-only"></div>
+    <my-catalog id="my-catalog" :catalog="catalog" class="am-u-lg-7 am-u-md-8"></my-catalog>
+    <my-article-icon id="my-article-icon" :icons="icons" class="am-u-lg-2 am-hide-sm-only"></my-article-icon>
+</section>
+</body>
+<script>
+    var myCatalog = new Vue({
+        el:'my-catalog',
+        data:{
+            catalog:[{
+                url:"#",
+                title:"Java 学习笔记",
+                time:"2017-08-11",
+                author:"zhuangqf"
+            },{
+                url:"#",
+                title:"Java 学习笔记",
+                time:"2017-08-11",
+                author:"zhuangqf"
+            },{
+                url:"#",
+                title:"Java 学习笔记",
+                time:"2017-08-11",
+                author:'zhuangqf'
+            },{
+                url:"#",
+                title:"Java 学习笔记",
+                time:"2017-08-11",
+                author:"zhuangqf"
+            },{
+                url:"#",
+                title:"Java 学习笔记",
+                time:"2017-08-11",
+                author:"zhuangqf"
+            }]
+        }
+    });
+    var myArticleIcon = new Vue({
+        el:'my-article-icon',
+        data:{
+            icons:[{
+                url:"#",
+                icon:"am-icon-star am-icon-btn"
+            },{
+                url:"#",
+                icon:"am-icon-wechat am-icon-btn"
+            },{
+                url:"#",
+                icon:"am-icon-comment am-icon-btn"
+            }]
+        }
+    })
+</script>
+</html>
