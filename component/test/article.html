@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" type="text/html" href="../../head.html">
+    <link rel="import" type="text/html" href="../../head_article.html">
+    <script src="../vue.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../article.js"></script>
+</head>
+<body>
+    <section class="am-g">
+        <aside data-am-sticky="{top:200}" id="my-aside" class="am-u-lg-3 am-u-md-4 am-hide-sm-only"></aside>
+        <my-article id="my-article" v-bind:html="html" class="my-article am-u-lg-7 am-u-md-8" ></my-article>
+        <my-article-icon id="my-article-icon" v-bind:icons="icons" class="am-u-lg-2 am-hide-sm-only"></my-article-icon>
+    </section>
+</body>
+<script>
+        var url = "https://raw.githubusercontent.com/zhuangqf-sysu/SpringBootDemo/master/README.md";
+        var myArticle = new Vue({
+            el:'my-article',
+            data:{
+                html:"<h4>文章加载中......</h4>"
+            },
+            mounted:function () {
+                var progress = $.AMUI.progress;
+                progress.start();
+                $.get(url,function (data) {
+                    var converter = new showdown.Converter();
+                    var html      = converter.makeHtml(data);
+                    myArticle.$data.html = html;
+                    progress.done();
+                });
+            },
+            updated:function () {
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            }
+        });
+
+    var myArticleIcon = new Vue({
+        el:'my-article-icon',
+        data:{
+            icons:[{
+                url:"#",
+                icon:"am-icon-star am-icon-btn"
+            },{
+                url:"#",
+                icon:"am-icon-wechat am-icon-btn"
+            },{
+                url:"#",
+                icon:"am-icon-comment am-icon-btn"
+            }]
+        }
+    })
+</script>
+</html>

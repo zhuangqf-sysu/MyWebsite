@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuangqf.cn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/slimmenu.min.css" rel="stylesheet" media="screen">
+    <link href="css/header_style1.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexy-menu.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});
+            $('#da-slider').cslider({
+                autoplay	: true,
+                bgincrement	: 450
+            });
+            $("#owl-demo").owlCarousel({
+                items : 1,
+                lazyLoad : true,
+                autoPlay : true,
+                navigation : true,
+                navigationText : ["",""],
+                rewindNav :true,
+                scrollPerPage :true,
+                pagination : true,
+                paginationNumbers: false,
+            });
+            $("#owl-demo1").owlCarousel({
+                items : 1,
+                lazyLoad : true,
+                autoPlay : true,
+                navigation : true,
+                navigationText : ["",""],
+                rewindNav : true,
+                scrollPerPage :true,
+                pagination : false,
+                paginationNumbers: false,
+            });
+            $("#owl-demo2").owlCarousel({
+                items : 1,
+                lazyLoad : true,
+                autoPlay : true,
+                navigation : false,
+                navigationText : ["",""],
+                rewindNav : false,
+                scrollPerPage :true,
+                pagination : false,
+                paginationNumbers: false,
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="content" id="home">
+        <div class="wrap">
+            <div class="header_style1">
+                <!-- start h_logo -->
+                <div class="logo">
+                    <h1><a href="index_temp.html">zhuangqf</a></h1>
+                </div>
+                <!-- start h_menu -->
+                <div class="h_menu">
+                    <ul class="flexy-menu thick orange">
+                        <li><a href="#" class="scroll">Home</a></li>
+                        <li><a href="#" class="scroll">Java</a></li>
+                        <li><a href="#" class="scroll">Netty</a> </li>
+                        <li><a href="#" class="scroll">Spring</a> </li>
+                        <li><a href="#" class="scroll">Project</a></li>
+                        <li><a href="#" class="scroll">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- end h_menu -->
+                <div class="clear"> </div>
+            </div>
+            <div class="slider">
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Spring</h2>
+                        <p>wechat-spring-boot-starter:封装weixin-java-tools为spring-boot-starter</p>
+                        <a href="https://github.com/zhuangqf-sysu/wechat-spring-boot-starter" class="da-link"><span> READ NOW</span></a> </div>
+                    <div class="da-slide">
+                        <h2>Spring</h2>
+                        <p>SpringBootDemo:一个基于Spring Boot的Rest Web开发脚手架</p>
+                        <a href="https://github.com/zhuangqf-sysu/SpringBootDemo" class="da-link"><span> READ NOW</span></a> </div>
+                    <div class="da-slide">
+                        <h2>Java</h2>
+                        <p>JavaLearningDemo:初学Java时写的demo</p>
+                        <a href="https://github.com/zhuangqf-sysu/JavaLearningDemo" class="da-link"><span> READ NOW</span></a> </div>
+                    <nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
+                </div>
+                <div class="down-arrow">
+                    <a href="#motto" class="scroll" ><span> </span></a>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="group_1" id="motto">
+        <div class="group_1-items">
+            <div class="wrap">
+                <div id="owl-demo" class="owl-carousel">
+                    <div class="item" >
+                        <div class="carousel">
+                            <div class="group_1_img">
+                                <div class="img sun-img"></div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="group_1_text">
+                                <h3></h3>
+                                <h3>中大学子</h3>
+                                <p>博学 审问 慎思 明辨 笃行</p>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <div class="carousel">
+                            <div class="group_1_img">
+                                <div class="img asia-img"></div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="group_1_text">
+                                <h3></h3>
+                                <h3>亚信java开发工程师</h3>
+                                <p>亚信技术培训生：一年毕业，两年工作经验</p>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                    <div class="item" >
+                        <div class="carousel">
+                            <div class="group_1_img">
+                                <div class="img motto-img"></div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="group_1_text">
+                                <h3></h3>
+                                <h3>天道酬勤 厚积薄发</h3>
+                                <p>生命不息，奋斗不止，在未来的道路上请努力！</p>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="group_3">
+        <div class="group_3-items">
+            <div class="wrap">
+                <div id="owl-demo2" class="owl-carousel">
+                    <div class="item" >
+                        <div class="carousel">
+                            <div class="group_3_img"> <img src="images/motto.jpg"> </div>
+                            <div class="group_1_text group_3_text">
+                                <h3> 庄勤发 </h3>
+                                <p>个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介</p>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
