@@ -33,7 +33,7 @@ var footer = {
     icons:[{
         call:"star",
         action: "点赞",
-        url:"#",
+        url:"https://github.com/zhuangqf-sysu/MyWebsite",
         icon:"am-icon-star"
     },{
         call:"wechat",
