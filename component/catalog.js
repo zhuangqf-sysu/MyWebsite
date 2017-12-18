@@ -9,7 +9,7 @@ Vue.component('my-catalog',{
             '</ul>'
 });
 
-Vue.component('my-project-catalog',{
+Vue.component('my-catalog-section',{
     props:['listUrl','icons','url'],
     data:function () {
         return {
@@ -22,10 +22,12 @@ Vue.component('my-project-catalog',{
                 '<my-catalog id="my-catalog" :catalog="catalog" class="am-u-lg-7 am-u-md-8"></my-catalog>'+
                 '<my-article-icon :icons="icons" class="am-u-lg-2 am-hide-sm-only"></my-article-icon>'+
             '</section>',
-    mounted:function () {
+    created:function () {
         var self = this;
         var progress = $.AMUI.progress;
         progress.start();
+        console.log(self);
+        console.log(this.$props.dealData);
         $.get(this.listUrl,function (data) {
             var result = [];
             for(var i in data){
@@ -47,4 +49,3 @@ Vue.component('my-project-catalog',{
         });
     }
 });
-

@@ -79,10 +79,10 @@ var section = {
 };
 
 /**
- * project 页信息
+ * 目录页信息
  * */
-var project= {
-    listUrl:"https://api.github.com/users/zhuangqf-sysu/repos?sort=created&direction=desc",
-    url:"content.html?projectId=",
-    icons:[]
+var project =  {
+    listUrl: "https://api.github.com/users/zhuangqf-sysu/repos?sort=created&direction=desc",
+    url: "content.html?projectId=",
+    icons: []
 };
