@@ -28,13 +28,12 @@ Vue.component('my-project-catalog',{
         progress.start();
         $.get(this.listUrl,function (data) {
             var result = [];
-            console.log(self);
             for(var i in data){
                 var item = {
                     title:data[i].name,
                     author:data[i].owner.login,
-                    created_at:data[i].created_at.substr(0,10),
-                    updated_at:data[i].updated_at.substr(0,10),
+                    created_at:new Date(data[i].created_at).toLocaleDateString(),
+                    updated_at:new Date(data[i].updated_at).toLocaleDateString(),
                     url:self.url+data[i].name
                 };
                 result.push(item);
@@ -48,3 +47,4 @@ Vue.component('my-project-catalog',{
         });
     }
 });
+
