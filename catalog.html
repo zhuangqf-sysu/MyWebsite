@@ -14,11 +14,19 @@
 </head>
 <body>
     <header class="my-header" id="my-header"><my-header :title="title" :menu="menu"></my-header></header>
-    <my-project-catalog id="my-catalog" :list-url="listUrl" :icons="icons" :url="url"></my-project-catalog>
+    <my-catalog-section id="my-catalog" :list-url="listUrl" :icons="icons" :url="url"></my-catalog-section>
     <my-footer id="my-footer" :icons="icons" :developer="developer"></my-footer>
     <my-record id="my-record" :record="record"></my-record>
 </body>
 <script>
+    var catalogData;
+    switch (Request[type]){
+        case "project":
+            catalogData = project;
+            break;
+            case ""
+    }
+
     var myHeader = new Vue({
         el: '#my-header',
         data: header
