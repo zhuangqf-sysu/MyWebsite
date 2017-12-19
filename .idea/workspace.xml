@@ -31,7 +31,7 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/java/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-108">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -221,7 +221,7 @@
       <workItem from="1513670685810" duration="2146000" />
       <workItem from="1513672904451" duration="356000" />
       <workItem from="1513674572594" duration="1777000" />
-      <workItem from="1513689262816" duration="4011000" />
+      <workItem from="1513689262816" duration="4061000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1513525722726</created>
@@ -335,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513696572931</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="test">
+      <created>1513697239049</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1513697239049</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134072000" />
+    <option name="totallyTimeSpent" value="134122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -703,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/java/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-108">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
