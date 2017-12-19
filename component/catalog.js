@@ -26,8 +26,6 @@ Vue.component('my-catalog-section',{
         var self = this;
         var progress = $.AMUI.progress;
         progress.start();
-        console.log(self);
-        console.log(this.$props.dealData);
         $.getJSON(this.listUrl,function (data) {
             var result = [];
             for(var i in data){
