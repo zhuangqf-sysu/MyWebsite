@@ -28,7 +28,7 @@ Vue.component('my-catalog-section',{
         progress.start();
         console.log(self);
         console.log(this.$props.dealData);
-        $.get(this.listUrl,function (data) {
+        $.getJSON(this.listUrl,function (data) {
             var result = [];
             for(var i in data){
                 var item = {

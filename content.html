@@ -22,7 +22,15 @@
         el: 'my-header',
         data: header
     });
-    section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/"+Request.projectId+"/master/README.md";
+    if(Request.projectId != null) {
+        section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/" + Request.projectId + "/master/README.md";
+    }else if(Request.javaId != null){
+        section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/java/"+Request.javaId+".md";
+    }else if(Request.springId != null){
+        section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/spring/"+Request.springId+".md";
+    }else if(Request.nettyId != null){
+        section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/netty/"+Request.nettyId+".md";
+    }
     var mySection = new Vue({
         el: 'my-section',
         data: section

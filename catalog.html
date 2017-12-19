@@ -20,11 +20,20 @@
 </body>
 <script>
     var catalogData;
-    switch (Request[type]){
+    switch (Request["type"]){
         case "project":
             catalogData = project;
             break;
-            case ""
+        case "java":
+            catalogData = java;
+            break;
+        case "netty":
+            catalogData = netty;
+            break;
+        case  "spring":
+            catalogData = spring;
+            break;
+        default: catalogData = project;
     }
 
     var myHeader = new Vue({
@@ -33,7 +42,7 @@
     });
     var myCatalog = new Vue({
         el: '#my-catalog',
-        data: project
+        data: catalogData
     });
     var myFooter = new Vue({
         el: '#my-footer',
