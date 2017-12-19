@@ -12,16 +12,16 @@ var header = {
         url:"index.html",
         name:"home"
     },{
-        url:"java.html",
+        url:"catalog.html?type=java",
         name:"java"
     },{
-        url:"spring.html",
+        url:"catalog.html?type=spring",
         name:"spring"
     },{
-        url:"netty.html",
+        url:"catalog.html?type=netty",
         name:"netty"
     },{
-        url:"project.html",
+        url:"catalog.html?type=project",
         name:"project"
     }]
 };
@@ -85,4 +85,22 @@ var project =  {
     listUrl: "https://api.github.com/users/zhuangqf-sysu/repos?sort=created&direction=desc",
     url: "content.html?projectId=",
     icons: []
+};
+
+var java = {
+    listUrl: "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/java/config.json",
+    url: "content.html?javaId=",
+    icons:[]
+};
+
+var spring = {
+    listUrl: "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/spring/config.json",
+    url: "content.html?springId=",
+    icons:[]
+};
+
+var netty = {
+    listUrl: "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/netty/config.json",
+    url: "content.html?nettyId=",
+    icons:[]
 };
