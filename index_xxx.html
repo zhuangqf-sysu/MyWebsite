@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuangqf.cn</title>
+    <link rel="import" type="text/html" href="head.html">
+    <link rel="import" type="text/html" href="head_article.html">
+    <script src="component/vue.js"></script>
+    <script src="component/header.js"></script>
+    <script src="component/footer.js"></script>
+    <script src="data/zhuangqf.js"></script>
+    <style>
+        .my-full-pic{
+            position: relative;
+        }
+        .my-drop-down{
+            position: absolute;
+            width: 100%;
+            bottom: 4em;
+        }
+        .my-drop-down span{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="my-header" id="my-header">
+        <my-header v-bind:title="title" v-bind:menu="menu"></my-header>
+        <div id="my-full-pic" class="my-full-pic am-container">
+
+        </div>
+    </header>
+    <my-footer id="my-footer" v-bind:icons="icons" v-bind:developer="developer"></my-footer>
+    <my-record id="my-record" v-bind:record="record"></my-record>
+</body>
+<script>
+    var myHeader = new Vue({
+        el: 'my-header',
+        data: header
+    });
+    var myFooter = new Vue({
+        el: '#my-footer',
+        data:footer
+    });
+    var myRecord = new Vue({
+        el: '#my-record',
+        data:record
+    });
+    function updateHeight(){
+        var h1 = $(window).height();
+        var h2 = $('.header_style1').height();
+        $('.my-full-pic').css("height",(h1-h2));
+        $('.my-full-pic').html('<span class="am-vertical-align-bottom am-center" style="width: 2em;height: 2em"></span>');
+    }
+    updateHeight();
+    $(window).resize(function() {
+        updateHeight();
+    });
+</script>
+</html>
