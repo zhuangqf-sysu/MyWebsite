@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    $(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});
-});
-
 var Request = GetRequest();
 function GetRequest() {
     var url = location.search;

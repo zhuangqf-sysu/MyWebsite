@@ -8,12 +8,16 @@ Vue.component("my-menu",{
    template:'<div class="h_menu"><ul class="flexy-menu thick orange">' +
                 '<my-menu-item v-for="item in menu" v-bind:item="item" v-bind:key="item.url"></my-menu-item>' +
                 '</ul>'+
-            '</div>'
+            '</div>',
+    mounted:function () {
+       console.log(this.$el);
+        $(this.$el).find(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});
+    }
 });
 
 Vue.component("my-title",{
     props:['title'],
-    template:' <div class="logo"><h1><a href="header.html">{{title}}</a></h1></div>'
+    template:' <div class="logo"><h1><a href="#">{{title}}</a></h1></div>'
 });
 
 Vue.component("my-header",{
