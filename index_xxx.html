@@ -8,27 +8,44 @@
     <script src="component/vue.js"></script>
     <script src="component/header.js"></script>
     <script src="component/footer.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $('#da-slider').cslider({
+                autoplay	: true,
+                bgincrement	: 450
+            });
+
+        });
+    </script>
     <script src="data/zhuangqf.js"></script>
     <style>
         .my-full{
             position: relative;
-        }
-        .my-drop-down{
-            color: white;
-            position: absolute;
-            bottom: 2em;
-            width: 100%;
-            text-align: center;
-        }
-        .my-drop-down:hover{
-            color: grey;
         }
     </style>
 </head>
 <body>
     <header class="my-header my-full" id="my-header">
         <my-header v-bind:title="title" v-bind:menu="menu"></my-header>
-        <a class="am-icon-lg my-drop-down am-icon-arrow-circle-down"></a>
+        <div class="slider">
+            <!---start-da-slider----->
+            <div id="da-slider" class="da-slider">
+                <div class="da-slide">
+                    <h2>Spring</h2>
+                    <p>wechat-spring-boot-starter:封装weixin-java-tools为spring-boot-starter</p>
+                    <a href="https://github.com/zhuangqf-sysu/wechat-spring-boot-starter" class="da-link"><span> READ NOW</span></a> </div>
+                <div class="da-slide">
+                    <h2>Spring</h2>
+                    <p>SpringBootDemo:一个基于Spring Boot的Rest Web开发脚手架</p>
+                    <a href="https://github.com/zhuangqf-sysu/SpringBootDemo" class="da-link"><span> READ NOW</span></a> </div>
+                <div class="da-slide">
+                    <h2>Java</h2>
+                    <p>JavaLearningDemo:初学Java时写的demo</p>
+                    <a href="https://github.com/zhuangqf-sysu/JavaLearningDemo" class="da-link"><span> READ NOW</span></a> </div>
+                <nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
+            </div>
+            <div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
     </header>
     <my-footer id="my-footer" v-bind:icons="icons" v-bind:developer="developer"></my-footer>
     <my-record id="my-record" v-bind:record="record"></my-record>
@@ -45,14 +62,6 @@
     var myRecord = new Vue({
         el: '#my-record',
         data:record
-    });
-    function updateHeight(){
-        var h1 = $(window).height();
-        $('.my-full').css("height",h1);
-    }
-    updateHeight();
-    $(window).resize(function() {
-        updateHeight();
     });
     $('.am-slider').flexslider();
 </script>

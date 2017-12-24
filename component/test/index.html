@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" type="text/html" href="../../head.html">
+    <script src="../vue.js"></script>
+    <script src="../header.js"></script>
+    <script src="../index.js"></script>
+</head>
+<body>
+    <header class="my-header my-full">
+        <my-header id="my-header" :title="title" :menu="menu"></my-header>
+        <my-slider id="my-slider" :recommends="recommends"></my-slider>
+        <div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
+    </header>
+</body>
+<script>
+    var header = {
+        title: "zhuangqf",
+        menu:[{
+            url:"index.html",
+            name:"home"
+        },{
+            url:"netty.html",
+            name:"netty"
+        }]
+    };
+    var myHeader = new Vue({
+        el: '#my-header',
+        data: header
+    });
+    var recommends = {
+        recommends:[{
+            "topic":"Spring",
+            "title":"wechat-spring-boot-starter",
+            "summary":"封装weixin-java-tools为spring-boot-starte",
+            "url":"https://github.com/zhuangqf-sysu/wechat-spring-boot-starter"
+        },{
+            "topic":"Spring",
+            "title":"SpringBootDemo",
+            "summary":"一个基于Spring Boot的Rest Web开发脚手架",
+            "url":"https://github.com/zhuangqf-sysu/SpringBootDemo"
+        },{
+            "topic":"Java",
+            "title":"JavaLearningDemo",
+            "summary":"初学Java时写的demo",
+            "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
+        },{
+            "topic":"Spring",
+            "title":"SpringBootDemo",
+            "summary":"一个基于Spring Boot的Rest Web开发脚手架",
+            "url":"https://github.com/zhuangqf-sysu/SpringBootDemo"
+        },{
+            "topic":"Java",
+            "title":"JavaLearningDemo",
+            "summary":"初学Java时写的demo",
+            "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
+        }]
+    };
+    var mySlider = new Vue({
+        el:"#my-slider",
+        data:recommends
+    })
+</script>
+</html>

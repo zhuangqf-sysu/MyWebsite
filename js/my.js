@@ -11,3 +11,14 @@ function GetRequest() {
     }
     return theRequest;
 }
+function updateHeight(){
+    var h1 = $(window).height();
+    $('.my-full').css("height",h1);
+}
+$(window).resize(function() {
+    updateHeight();
+});
+
+$(document).ready(function () {
+    updateHeight();
+});
