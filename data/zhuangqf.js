@@ -137,3 +137,11 @@ var recommends = {
         "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
     }]
 };
+
+var introduce = {
+    "url":"images/motto.jpg",
+    "title":"站长介绍",
+    "introduce":"本站作者庄勤发，一个爱学习、爱代码、爱装逼的阳光少年。师承双鸭山CS系，入java派web堂。" +
+    "勤修苦练Spring，进研Netty，偶有涉猎前端，略懂js，算法内功不曾落下。" +
+    "小子初出茅庐，志在全栈，终极目标乃大牛架构师。"
+};

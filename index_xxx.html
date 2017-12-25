@@ -8,49 +8,28 @@
     <script src="component/vue.js"></script>
     <script src="component/header.js"></script>
     <script src="component/footer.js"></script>
-    <script type="text/javascript">
-        $(function() {
-
-            $('#da-slider').cslider({
-                autoplay	: true,
-                bgincrement	: 450
-            });
-
-        });
-    </script>
+    <script src="component/index.js"></script>
+    <script src="js/echarts.simple.min.js"></script>
     <script src="data/zhuangqf.js"></script>
     <style>
-        .my-introduce-box{
+        .my-index-model{
+            background-color: white;
+            padding: 8% 0;
             width: 100%;
-            background-color: #35AFBA;
-            padding: 2em 0 ;
+            text-align: center;
         }
-        .my-flexbox{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .my-index-model>div{
+            background-color: #F4F4F4;
+            height: 100%;
+            width: 100%;
+            padding: 2em 0;
         }
-        .my-flexbox img{
+        .chart{
             display: inline-block;
-            width: 200px;
-            height: 200px;
+            height: 300px;
+            width: 300px;
         }
-        .my-flexbox .box{
-            display: inline-block;
-            min-width: 200px;
-        }
-        .my-introduce{
-            width: 60%;
-        }
-        .my-introduce h2{
-            margin: 0.5em;
-            border-bottom: solid 2px grey;
-        }
-        .my-introduce p{
-            display: inline-block;
-            text-indent: 2em;
-        }
+
     </style>
 </head>
 <body>
@@ -73,21 +52,23 @@
                     <a href="https://github.com/zhuangqf-sysu/JavaLearningDemo" class="da-link"><span> READ NOW</span></a> </div>
                 <nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
             </div>
-            <div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
+            <div class="down-arrow"> <a href="#section1" class="scroll" ><span> </span></a> </div>
+        </div>
     </header>
-    <div class="my-introduce-box"><div class="am-g am-g-fixed">
-        <div class="am-u-sm-12 my-flexbox">
-            <img src="images/motto.jpg" class="am-img-thumbnail am-circle am-img-responsive">
-            <div class="box my-introduce">
-                <h2>站长介绍</h2>
-                <p>
-                    本站作者庄勤发，一个爱学习、爱代码、爱装逼的阳光少年。师承双鸭山CS系，入java派web堂。
-                    勤修苦练Spring，进研Netty，偶有涉猎前端，略懂js，算法内功不曾落下。
-                    小子初出茅庐，志在全栈，终极目标乃大牛架构师。
-                </p>
+    <section id="section1" class="my-index-model my-full">
+        <div><div class="am-g am-g-fixed">
+            <h1 class="am-u-sm-centered am-u-sm-6 am-u-md-4 am-u-lg-3">天道酬勤</h1>
+            <p class="am-u-sm-centered am-u-sm-10 am-u-md-7 am-u-lg-5" class="am-kai">生命不息，奋斗不止，在未来的道路上请努力！</p>
+            <div class="am-u-sm-12">
+                <div class="my-flexbox">
+                    <div id="chart1" class="chart"></div>
+                    <div id="chart2" class="chart"></div>
+                </div>
             </div>
         </div>
-    </div></div>
+        </div>
+    </section>
+    <my-introduce id="my-introduce" :url="url" :title="title" :introduce="introduce"></my-introduce>
     <my-footer id="my-footer" v-bind:icons="icons" v-bind:developer="developer"></my-footer>
     <my-record id="my-record" v-bind:record="record"></my-record>
 </body>
@@ -104,6 +85,73 @@
         el: '#my-record',
         data:record
     });
-    $('.am-slider').flexslider();
+    var myIntroduce = new Vue({
+        el:"#my-introduce",
+        data:introduce
+    });
+    var chart1 = echarts.init(document.getElementById('chart1'));
+    var chart2 = echarts.init(document.getElementById('chart2'));
+    var option1 = {
+        title: {
+            text: '站内博客统计'
+        },
+        tooltip: {},
+        legend: {
+            data:['篇数']
+        },
+        xAxis: {
+            data: ["java","spring","netty"]
+        },
+        yAxis: {},
+        series: [{
+            name: '篇数',
+            type: 'bar',
+            data: [0,0,0]
+        }]
+    };
+    var option2 = {
+        title: {
+            text: '站内博客统计'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data:['java','spring','netty']
+        },
+        series: [{
+            name: '篇数',
+            type: 'pie',
+            data: [
+                {name:"java",value:0},
+                {name:"spring",value:0},
+                {name:"netty",value:0}
+            ]
+        }]
+    };
+    var url1 = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/java/config.json";
+    var url2 = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/spring/config.json";
+    var url3 = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/netty/config.json"
+    $.getJSON(url1,function (data) {
+        option1.series[0].data[0] = data.length;
+        option2.series[0].data[0].value = data.length;
+        chart1.setOption(option1);
+        chart2.setOption(option2);
+    });
+    $.getJSON(url2,function (data) {
+        option1.series[0].data[1] = data.length;
+        option2.series[0].data[1].value = data.length;
+        chart1.setOption(option1);
+        chart2.setOption(option2);
+    });
+    $.getJSON(url3,function (data) {
+        option1.series[0].data[2] = data.length;
+        option2.series[0].data[2].value = data.length;
+        chart1.setOption(option1);
+        chart2.setOption(option2);
+    });
 </script>
 </html>

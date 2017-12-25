@@ -28,7 +28,7 @@ Vue.component("my-introduce",{
                     '<img :src="url" class="am-img-thumbnail am-circle am-img-responsive">' +
                     '<div class="box my-introduce">' +
                         '<h2>{{title}}</h2>' +
-                        '<p>{{introduce}}</p>'+
+                        '<p class="am-kai">{{introduce}}</p>'+
                     '</div>' +
                 '</div>' +
             '</div></div>'
