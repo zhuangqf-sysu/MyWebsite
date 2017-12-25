@@ -36,25 +36,8 @@
 <body>
     <header class="my-header my-full" id="my-header">
         <my-header v-bind:title="title" v-bind:menu="menu"></my-header>
-        <div class="slider">
-            <!---start-da-slider----->
-            <div id="da-slider" class="da-slider">
-                <div class="da-slide">
-                    <h2>Spring</h2>
-                    <p>wechat-spring-boot-starter:封装weixin-java-tools为spring-boot-starter</p>
-                    <a href="https://github.com/zhuangqf-sysu/wechat-spring-boot-starter" class="da-link"><span> READ NOW</span></a> </div>
-                <div class="da-slide">
-                    <h2>Spring</h2>
-                    <p>SpringBootDemo:一个基于Spring Boot的Rest Web开发脚手架</p>
-                    <a href="https://github.com/zhuangqf-sysu/SpringBootDemo" class="da-link"><span> READ NOW</span></a> </div>
-                <div class="da-slide">
-                    <h2>Java</h2>
-                    <p>JavaLearningDemo:初学Java时写的demo</p>
-                    <a href="https://github.com/zhuangqf-sysu/JavaLearningDemo" class="da-link"><span> READ NOW</span></a> </div>
-                <nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
-            </div>
-            <div class="down-arrow"> <a href="#section1" class="scroll" ><span> </span></a> </div>
-        </div>
+        <my-slider id="my-slider" :recommends="recommends"></my-slider>
+        <div class="down-arrow"> <a href="#section1" class="scroll" ><span> </span></a> </div>
     </header>
     <section id="section1" class="my-index-model my-full">
         <div><div class="am-g am-g-fixed">
@@ -85,6 +68,10 @@
     var myRecord = new Vue({
         el: '#my-record',
         data:record
+    });
+    var mySlider = new Vue({
+        el:"#my-slider",
+        data:recommends
     });
     var myIntroduce = new Vue({
         el:"#my-introduce",
