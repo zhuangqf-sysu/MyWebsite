@@ -104,3 +104,36 @@ var netty = {
     url: "content.html?nettyId=",
     icons:[]
 };
+
+/**
+ * index
+ * */
+
+var recommends = {
+    recommends:[{
+        "topic":"Spring",
+        "title":"wechat-spring-boot-starter",
+        "summary":"封装weixin-java-tools为spring-boot-starte",
+        "url":"https://github.com/zhuangqf-sysu/wechat-spring-boot-starter"
+    },{
+        "topic":"Spring",
+        "title":"SpringBootDemo",
+        "summary":"一个基于Spring Boot的Rest Web开发脚手架",
+        "url":"https://github.com/zhuangqf-sysu/SpringBootDemo"
+    },{
+        "topic":"Java",
+        "title":"JavaLearningDemo",
+        "summary":"初学Java时写的demo",
+        "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
+    },{
+        "topic":"Spring",
+        "title":"SpringBootDemo",
+        "summary":"一个基于Spring Boot的Rest Web开发脚手架",
+        "url":"https://github.com/zhuangqf-sysu/SpringBootDemo"
+    },{
+        "topic":"Java",
+        "title":"JavaLearningDemo",
+        "summary":"初学Java时写的demo",
+        "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
+    }]
+};

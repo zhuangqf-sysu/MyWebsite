@@ -20,3 +20,16 @@ Vue.component("my-slider",{
         });
     }
 });
+
+Vue.component("my-introduce",{
+    props:['url','title','introduce'],
+    template:'<div class="my-introduce-box"><div class="am-g am-g-fixed">' +
+                '<div class="am-u-sm-12 my-flexbox">' +
+                    '<img :src="url" class="am-img-thumbnail am-circle am-img-responsive">' +
+                    '<div class="box my-introduce">' +
+                        '<h2>{{title}}</h2>' +
+                        '<p>{{introduce}}</p>'+
+                    '</div>' +
+                '</div>' +
+            '</div></div>'
+});

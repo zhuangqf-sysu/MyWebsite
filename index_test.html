@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" type="text/html" href="head.html">
+    <link rel="import" type="text/html" href="head_article.html">
+    <script src="component/vue.js"></script>
+    <script src="component/header.js"></script>
+    <script src="component/footer.js"></script>
+    <script src="component/index.js"></script>
+    <script src="data/zhuangqf.js"></script>
+</head>
+<body>
+    <header class="my-header my-full">
+        <my-header id="my-header" :title="title" :menu="menu"></my-header>
+        <my-slider id="my-slider" :recommends="recommends"></my-slider>
+        <div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
+    </header>
+    <my-footer id="my-footer" :icons="icons" :developer="developer"></my-footer>
+    <my-record id="my-record" :record="record"></my-record>
+</body>
+<script>
+    var myHeader = new Vue({
+        el: '#my-header',
+        data: header
+    });
+    var myFooter = new Vue({
+        el: '#my-footer',
+        data:footer
+    });
+    var myRecord = new Vue({
+        el: '#my-record',
+        data:record
+    });
+    var mySlider = new Vue({
+        el:"#my-slider",
+        data:recommends
+    });
+</script>
+</html>

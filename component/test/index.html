@@ -14,6 +14,7 @@
         <my-slider id="my-slider" :recommends="recommends"></my-slider>
         <div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
     </header>
+    <my-introduce id="my-introduce" :url="url" :title="title" :introduce="introduce"></my-introduce>
 </body>
 <script>
     var header = {
@@ -58,9 +59,24 @@
             "url":"https://github.com/zhuangqf-sysu/JavaLearningDemo"
         }]
     };
+
+    var introduce = {
+        "url":"../../images/motto.jpg",
+        "title":"站长介绍",
+        "introduce":"本站作者庄勤发，一个爱学习、爱代码、爱装逼的阳光少年。师承双鸭山CS系，入java派web堂。" +
+        "勤修苦练Spring，进研Netty，偶有涉猎前端，略懂js，算法内功不曾落下。" +
+        "小子初出茅庐，志在全栈，终极目标乃大牛架构师。"
+    };
+
     var mySlider = new Vue({
         el:"#my-slider",
         data:recommends
-    })
+    });
+
+    var myIntroduce = new Vue({
+        el:"#my-introduce",
+        data:introduce
+    });
+
 </script>
 </html>
