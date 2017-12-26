@@ -35,7 +35,7 @@ Vue.component('my-section',{
             self.html = html;
             progress.done();
         }).fail(function(){
-            self.html = "<h4>文章加载失败</h4>";
+            self.html = "<h4>暂无文章。。。。。。</h4>";
             progress.done();
         })
     },
