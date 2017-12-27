@@ -38,15 +38,15 @@ var footer = {
     },{
         call:"wechat",
         action: "打赏",
-        url:"#",
+        url:"javascript:rewardModal()",
         icon:"am-icon-wechat"
     },{
         action: "评论",
-        url:"#",
+        url:"javascript:alert('评论功能尚未实现，请稍候')",
         icon:"am-icon-comment"
     },{
         action: "报bug",
-        url:"#",
+        url:"https://github.com/zhuangqf-sysu/MyWebsite/issues",
         icon:"am-icon-bug"
     }],
     developer:{
@@ -56,7 +56,7 @@ var footer = {
 };
 
 var record = {
-    "record": "备案号"
+    "record": "2017-12-26"
 };
 
 
@@ -67,13 +67,13 @@ var section = {
     url:"",
     html: "<h4>文章加载中......</h4>",
     icons:[{
-        url:"#",
+        url:"https://github.com/zhuangqf-sysu/MyWebsite",
         icon:"am-icon-star am-icon-btn"
     },{
-        url:"#",
+        url:"javascript:rewardModal()",
         icon:"am-icon-wechat am-icon-btn"
     },{
-        url:"#",
+        url:"javascript:alert('评论功能尚未实现，请稍候')",
         icon:"am-icon-comment am-icon-btn"
     }]
 };
@@ -141,7 +141,11 @@ var recommends = {
 var introduce = {
     "url":"images/motto.jpg",
     "title":"站长介绍",
-    "introduce":"本站作者庄勤发，一个爱学习、爱代码、爱装逼的阳光少年。师承双鸭山CS系，入java派web堂。" +
+    "introduce":"本站作者庄勤发，一个爱学习、爱代码、爱装逼、爱发呆的阳光少年。师承双鸭山CS系，入java派web堂。" +
     "勤修苦练Spring，进研Netty，偶有涉猎前端，略懂js，算法内功不曾落下。" +
     "小子初出茅庐，志在全栈，终极目标乃大牛架构师。"
+};
+
+var reward = {
+    "url":"images/reward.jpg"
 };

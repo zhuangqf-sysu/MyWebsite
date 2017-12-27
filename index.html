@@ -69,6 +69,7 @@
         </div>
     </section>
     <my-introduce id="my-introduce" :url="url" :title="title" :introduce="introduce"></my-introduce>
+    <my-reward-modal id="my-reward-modal" :url="url"></my-reward-modal>
     <my-footer id="my-footer" v-bind:icons="icons" v-bind:developer="developer"></my-footer>
     <my-record id="my-record" v-bind:record="record"></my-record>
 </body>
@@ -92,6 +93,10 @@
     var myIntroduce = new Vue({
         el:"#my-introduce",
         data:introduce
+    });
+    var myRewardModal = new Vue({
+        el: 'my-reward-modal',
+        data:reward
     });
     var chart1 = echarts.init(document.getElementById('chart1'));
     var chart2 = echarts.init(document.getElementById('chart2'));

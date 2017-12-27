@@ -50,3 +50,12 @@ Vue.component('my-section',{
         });
     }
 });
+
+Vue.component('my-reward',{
+    props:['url'],
+    template:'<div class="am-g am-g-fixed">' +
+    '           <div  class="am-u-sm-6 am-u-md-4 am-u-md-3 am-u-sm-centered">\n' +
+    '               <img :src="url">\n' +
+    '           </div>\n' +
+    '        </div>'
+});

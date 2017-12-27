@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <title>Content</title>
     <link rel="icon" href="images/glasses.png">
-    <link rel="import" type="text/html" href="head.html">
-    <link rel="import" type="text/html" href="head_article.html">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="blog,IT,coder,java,程序员,zhuangqf,庄勤发"/>
+    <meta name="author" content="zhuangqf,https://github.com/zhuangqf-sysu"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="images/glasses.png">
+    <link rel="stylesheet" type="text/css" href="css/slimmenu.min.css">
+    <link rel="stylesheet" type="text/css" href="css/header_style1.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <link rel="stylesheet" type="text/css" href="amazeui/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flexy-menu.js"></script>
+    <script src="amazeui/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script src="js/my.js"></script>
+    <link rel="stylesheet" href="css/github-markdown.css">
+    <link rel="stylesheet" href="css/idea.css">
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/showdown.min.js"></script>
+    <script src="js/md-toc.js"></script>
     <script src="component/vue.js"></script>
     <script src="component/header.js"></script>
     <script src="component/footer.js"></script>
@@ -15,8 +36,10 @@
 <body>
     <header class="my-header" id="my-header"><my-header v-bind:title="title" v-bind:menu="menu"></my-header></header>
     <my-section id="my-section" :html="html" :url="url" :icons="icons"></my-section>
-    <my-footer id="my-footer" v-bind:icons="icons" v-bind:developer="developer"></my-footer>
-    <my-record id="my-record" v-bind:record="record"></my-record>
+    <my-reward id="my-reward" :url="url"></my-reward>
+    <my-reward-modal id="my-reward-modal" :url="url"></my-reward-modal>
+    <my-footer id="my-footer" :icons="icons" :developer="developer"></my-footer>
+    <my-record id="my-record" :record="record"></my-record>
 </body>
 <script>
     var myHeader = new Vue({
@@ -25,6 +48,7 @@
     });
     if(Request.projectId != null) {
         section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/" + Request.projectId + "/master/README.md";
+        section.icons[0].url = "https://github.com/zhuangqf-sysu/" + Request.projectId;
     }else if(Request.javaId != null){
         section.url = "https://raw.githubusercontent.com/zhuangqf-sysu/MyWebsite/master/blog/java/"+Request.javaId+".md";
     }else if(Request.springId != null){
@@ -43,6 +67,15 @@
     var myRecord = new Vue({
         el: '#my-record',
         data:record
+    });
+
+    var myReward = new Vue({
+        el: 'my-reward',
+        data: reward
+    });
+    var myRewardModal = new Vue({
+        el: 'my-reward-modal',
+        data:reward
     });
 </script>
 </html>
