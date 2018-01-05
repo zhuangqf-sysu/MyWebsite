@@ -1,3 +1,5 @@
+## java.util 概述之集合框架
+
 *本文首发于本人博客 [lovefadai.xyz](http://www.lovefadai.xyz)：[java.util概述]() 欢迎访问，转载请注明来源。*
 
 > Package java.util
@@ -24,13 +26,18 @@ Collection接口定义了容器的基本使用功能——存取数据。Set、Q
 
 > 通过对你导出的每个重要接口都提供一个抽象的骨架实现类（AbstractInterface），把接口和抽象类的优点结合起来。接口的作用仍然是定义类型，但是骨架实现类接管了所有与接口实现相关的工作。
 
+
 ![AbstractClass.png](http://upload-images.jianshu.io/upload_images/4215078-4007408be75bf677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 - 3、丰富实现
 
+
 框架有了，最后就是得在框架中提供几个具体的实现给程序员使用。
 
+
 ![Implement.png](http://upload-images.jianshu.io/upload_images/4215078-6020100e45ff5d46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ### Map 框架
 
