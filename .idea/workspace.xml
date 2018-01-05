@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da8691ce-5b70-464c-8263-8d099114045d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md" afterPath="$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -284,7 +283,7 @@
       <workItem from="1514303394548" duration="757000" />
       <workItem from="1514377134081" duration="9081000" />
       <workItem from="1515046918693" duration="6000" />
-      <workItem from="1515171835970" duration="391000" />
+      <workItem from="1515171835970" duration="410000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1513525722726</created>
@@ -552,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515172014221</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update blog">
+      <created>1515172241196</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1515172241196</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191152000" />
+    <option name="totallyTimeSpent" value="191171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -610,12 +616,12 @@
     <MESSAGE value="add chart" />
     <MESSAGE value="change index" />
     <MESSAGE value="update domain" />
-    <MESSAGE value="update blog" />
     <MESSAGE value="add reward" />
     <MESSAGE value="debug" />
     <MESSAGE value="add blog" />
     <MESSAGE value="update config" />
-    <option name="LAST_COMMIT_MESSAGE" value="update config" />
+    <MESSAGE value="update blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="update blog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
