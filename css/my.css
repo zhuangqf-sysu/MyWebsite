@@ -109,3 +109,8 @@
     display: inline-block;
     text-indent: 2em;
 }
+.markdown img{
+    clear: both;
+    display: block;
+    margin:auto;
+}
