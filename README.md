@@ -10,3 +10,4 @@
 - 2017-12-25：暂上线
 - 2017-12-26：绑定域名lovefadai.xyz
 - 2017-12-27：上线赞赏功能
+- 2018-01-06：版本[v1.0](https://github.com/zhuangqf-sysu/MyWebsite/releases/tag/1.0)发布
