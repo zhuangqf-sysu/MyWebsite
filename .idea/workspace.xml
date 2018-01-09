@@ -2,13 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da8691ce-5b70-464c-8263-8d099114045d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/src/main/java/com/zhuangqf/website/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/website.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/admin.css" afterPath="$PROJECT_DIR$/static/amazeui/css/admin.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/amazeui.css" afterPath="$PROJECT_DIR$/static/amazeui/css/amazeui.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/amazeui.flat.css" afterPath="$PROJECT_DIR$/static/amazeui/css/amazeui.flat.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/amazeui.flat.min.css" afterPath="$PROJECT_DIR$/static/amazeui/css/amazeui.flat.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/amazeui.min.css" afterPath="$PROJECT_DIR$/static/amazeui/css/amazeui.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/css/app.css" afterPath="$PROJECT_DIR$/static/amazeui/css/app.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/static/amazeui/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/static/amazeui/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/static/amazeui/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/static/amazeui/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/static/amazeui/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/app-icon72x72@2x.png" afterPath="$PROJECT_DIR$/static/amazeui/i/app-icon72x72@2x.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/admin-chrome.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/admin-chrome.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/admin-firefox.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/admin-firefox.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/admin-ie.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/admin-ie.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/admin-opera.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/admin-opera.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/admin-safari.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/admin-safari.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/adminPage.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/adminPage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/blogPage.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/blogPage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/landing.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/landing.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/landingPage.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/landingPage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/loginPage.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/loginPage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/examples/sidebarPage.png" afterPath="$PROJECT_DIR$/static/amazeui/i/examples/sidebarPage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/favicon.png" afterPath="$PROJECT_DIR$/static/amazeui/i/favicon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/i/startup-640x1096.png" afterPath="$PROJECT_DIR$/static/amazeui/i/startup-640x1096.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.ie8polyfill.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.ie8polyfill.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.ie8polyfill.min.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.ie8polyfill.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.min.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.widgets.helper.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.widgets.helper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/amazeui.widgets.helper.min.js" afterPath="$PROJECT_DIR$/static/amazeui/js/amazeui.widgets.helper.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/app.js" afterPath="$PROJECT_DIR$/static/amazeui/js/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/amazeui/js/handlebars.min.js" afterPath="$PROJECT_DIR$/static/amazeui/js/handlebars.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/java/config.json" afterPath="$PROJECT_DIR$/static/blog/java/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md" afterPath="$PROJECT_DIR$/static/blog/java/java.util 概述之集合框架.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/java/软件设计原则.md" afterPath="$PROJECT_DIR$/static/blog/java/软件设计原则.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/netty/config.json" afterPath="$PROJECT_DIR$/static/blog/netty/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/spring/config.json" afterPath="$PROJECT_DIR$/static/blog/spring/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（上）.md" afterPath="$PROJECT_DIR$/static/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（上）.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（下）.md" afterPath="$PROJECT_DIR$/static/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（下）.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/catalog.html" afterPath="$PROJECT_DIR$/static/catalog.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/article.js" afterPath="$PROJECT_DIR$/static/component/article.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/catalog.js" afterPath="$PROJECT_DIR$/static/component/catalog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/footer.js" afterPath="$PROJECT_DIR$/static/component/footer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/header.js" afterPath="$PROJECT_DIR$/static/component/header.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/index.js" afterPath="$PROJECT_DIR$/static/component/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/vue.js" afterPath="$PROJECT_DIR$/static/component/vue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/component/vue.min.js" afterPath="$PROJECT_DIR$/static/component/vue.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/content.html" afterPath="$PROJECT_DIR$/static/content.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/font.css" afterPath="$PROJECT_DIR$/static/css/font.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/github-markdown.css" afterPath="$PROJECT_DIR$/static/css/github-markdown.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/header_style1.css" afterPath="$PROJECT_DIR$/static/css/header_style1.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/idea.css" afterPath="$PROJECT_DIR$/static/css/idea.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/my.css" afterPath="$PROJECT_DIR$/static/css/my.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/owl.carousel.css" afterPath="$PROJECT_DIR$/static/css/owl.carousel.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/slider.css" afterPath="$PROJECT_DIR$/static/css/slider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/slimmenu.min.css" afterPath="$PROJECT_DIR$/static/css/slimmenu.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/zhuangqf.js" afterPath="$PROJECT_DIR$/static/data/zhuangqf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/asia.gif" afterPath="$PROJECT_DIR$/static/images/asia.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/asset01.jpg" afterPath="$PROJECT_DIR$/static/images/asset01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/asset02.jpg" afterPath="$PROJECT_DIR$/static/images/asset02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/asset03.jpg" afterPath="$PROJECT_DIR$/static/images/asset03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/asset04.jpg" afterPath="$PROJECT_DIR$/static/images/asset04.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/down.png" afterPath="$PROJECT_DIR$/static/images/down.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/down1.png" afterPath="$PROJECT_DIR$/static/images/down1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/down1h.png" afterPath="$PROJECT_DIR$/static/images/down1h.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/downarrow.png" afterPath="$PROJECT_DIR$/static/images/downarrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/glasses.png" afterPath="$PROJECT_DIR$/static/images/glasses.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icon1.png" afterPath="$PROJECT_DIR$/static/images/icon1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icon2.png" afterPath="$PROJECT_DIR$/static/images/icon2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icon3.png" afterPath="$PROJECT_DIR$/static/images/icon3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icon4.png" afterPath="$PROJECT_DIR$/static/images/icon4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/icon5.png" afterPath="$PROJECT_DIR$/static/images/icon5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/img1.png" afterPath="$PROJECT_DIR$/static/images/img1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/img2.jpg" afterPath="$PROJECT_DIR$/static/images/img2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/img3.jpg" afterPath="$PROJECT_DIR$/static/images/img3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/java.jpg" afterPath="$PROJECT_DIR$/static/images/java.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/static/images/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/mail.png" afterPath="$PROJECT_DIR$/static/images/mail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/motto.jpg" afterPath="$PROJECT_DIR$/static/images/motto.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/motto1.jpeg" afterPath="$PROJECT_DIR$/static/images/motto1.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/nav-icon.png" afterPath="$PROJECT_DIR$/static/images/nav-icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/psb-min.jpg" afterPath="$PROJECT_DIR$/static/images/psb-min.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/psb.jpg" afterPath="$PROJECT_DIR$/static/images/psb.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/reward.jpg" afterPath="$PROJECT_DIR$/static/images/reward.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/sprite.png" afterPath="$PROJECT_DIR$/static/images/sprite.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/sun.jpg" afterPath="$PROJECT_DIR$/static/images/sun.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/top.png" afterPath="$PROJECT_DIR$/static/images/top.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/user.png" afterPath="$PROJECT_DIR$/static/images/user.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/easing.js" afterPath="$PROJECT_DIR$/static/js/easing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/echarts.simple.min.js" afterPath="$PROJECT_DIR$/static/js/echarts.simple.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/flexy-menu.js" afterPath="$PROJECT_DIR$/static/js/flexy-menu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/highlight.pack.js" afterPath="$PROJECT_DIR$/static/js/highlight.pack.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.cslider.js" afterPath="$PROJECT_DIR$/static/js/jquery.cslider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.easing.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.slimmenu.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.slimmenu.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/md-toc.js" afterPath="$PROJECT_DIR$/static/js/md-toc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/md-toc.min.js" afterPath="$PROJECT_DIR$/static/js/md-toc.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/modernizr.custom.28468.js" afterPath="$PROJECT_DIR$/static/js/modernizr.custom.28468.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/move-top.js" afterPath="$PROJECT_DIR$/static/js/move-top.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/my.js" afterPath="$PROJECT_DIR$/static/js/my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/owl.carousel.js" afterPath="$PROJECT_DIR$/static/js/owl.carousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/plugins.js" afterPath="$PROJECT_DIR$/static/js/plugins.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/static/js/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/showdown.js" afterPath="$PROJECT_DIR$/static/js/showdown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/showdown.js.map" afterPath="$PROJECT_DIR$/static/js/showdown.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/showdown.min.js" afterPath="$PROJECT_DIR$/static/js/showdown.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/showdown.min.js.map" afterPath="$PROJECT_DIR$/static/js/showdown.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/my.css" afterPath="$PROJECT_DIR$/css/my.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/website/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +134,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/catalog.html">
+      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="720">
               <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content.html">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
+            <state relative-caret-position="870">
+              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/src/main/java/com/zhuangqf/website/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/content.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
               <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
               <folding />
             </state>
@@ -39,9 +189,9 @@
         </entry>
       </file>
       <file leaf-file-name="my.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/my.css">
+        <entry file="file://$PROJECT_DIR$/static/css/my.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
+            <state relative-caret-position="3390">
               <caret line="113" column="14" lean-forward="false" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
               <folding />
             </state>
@@ -49,11 +199,11 @@
         </entry>
       </file>
       <file leaf-file-name="java.util 概述之集合框架.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md">
+        <entry file="file://$PROJECT_DIR$/static/blog/java/java.util 概述之集合框架.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="468">
-                <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <first_editor relative-caret-position="1110">
+                <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -62,9 +212,9 @@
         </entry>
       </file>
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/java/config.json">
+        <entry file="file://$PROJECT_DIR$/static/blog/java/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="540">
               <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
@@ -80,19 +230,27 @@
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/owl.carousel.css" />
-        <option value="$PROJECT_DIR$/js/showdown.js" />
-        <option value="$PROJECT_DIR$/js/header.html" />
         <option value="$PROJECT_DIR$/head.css" />
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/index_temp.html" />
@@ -141,6 +299,9 @@
         <option value="$PROJECT_DIR$/blog/java/config.json" />
         <option value="$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md" />
         <option value="$PROJECT_DIR$/css/my.css" />
+        <option value="$PROJECT_DIR$/website/pom.xml" />
+        <option value="$PROJECT_DIR$/website/src/main/java/com/zhuangqf/website/App.java" />
+        <option value="$PROJECT_DIR$/website/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -149,6 +310,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-56" />
@@ -172,7 +340,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,24 +351,36 @@
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,19 +390,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zhuangqf\learning\project\web\static" />
+      <recent name="C:\zhuangqf\learning\project\web\component" />
+      <recent name="C:\zhuangqf\learning\project\web\js" />
+      <recent name="C:\zhuangqf\learning\project\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zhuangqf\learning\project\web\images" />
       <recent name="C:\zhuangqf\learning\project\web\js" />
       <recent name="C:\zhuangqf\learning\project\web" />
       <recent name="C:\zhuangqf\learning\project\web\amazeui" />
       <recent name="C:\zhuangqf\learning\project\web\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zhuangqf\learning\project\web\component" />
-      <recent name="C:\zhuangqf\learning\project\web\js" />
-      <recent name="C:\zhuangqf\learning\project\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -236,6 +419,113 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zhuangqf.website.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zhuangqf.website.App" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="website" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -284,7 +574,10 @@
       <workItem from="1514303394548" duration="757000" />
       <workItem from="1514377134081" duration="9081000" />
       <workItem from="1515046918693" duration="6000" />
-      <workItem from="1515171835970" duration="1105000" />
+      <workItem from="1515171835970" duration="1766000" />
+      <workItem from="1515309478973" duration="5523000" />
+      <workItem from="1515375651515" duration="287000" />
+      <workItem from="1515507540529" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1513525722726</created>
@@ -580,37 +873,57 @@
       <option name="project" value="LOCAL" />
       <updated>1515172776385</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update css">
+      <created>1515172956890</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1515172956890</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191866000" />
+    <option name="totallyTimeSpent" value="198348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19503172" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.50687104" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.48942918" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5851293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.49312896" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20332618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.49788582" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +956,8 @@
     <MESSAGE value="add blog" />
     <MESSAGE value="update config" />
     <MESSAGE value="update blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="update blog" />
+    <MESSAGE value="update css" />
+    <option name="LAST_COMMIT_MESSAGE" value="update css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -652,18 +966,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/header.html" />
-    <entry file="file://$PROJECT_DIR$/footer.html" />
-    <entry file="file://$PROJECT_DIR$/js/md-toc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="106" column="9" lean-forward="false" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.zhuangqf.js" />
     <entry file="file://$PROJECT_DIR$/aside.html" />
-    <entry file="file://$PROJECT_DIR$/css/header_style1.css">
+    <entry file="file://$PROJECT_DIR$/static/css/header_style1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7344">
           <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
@@ -678,14 +983,14 @@
     <entry file="file://$PROJECT_DIR$/log.txt" />
     <entry file="file://$PROJECT_DIR$/blog/java/test.md" />
     <entry file="file://$PROJECT_DIR$/component/test/catalog.html" />
-    <entry file="file://$PROJECT_DIR$/js/my.js">
+    <entry file="file://$PROJECT_DIR$/static/js/my.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/slider.css">
+    <entry file="file://$PROJECT_DIR$/static/css/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
@@ -696,21 +1001,21 @@
     <entry file="file://$PROJECT_DIR$/index_bk.html" />
     <entry file="file://$PROJECT_DIR$/index1.html" />
     <entry file="file://$PROJECT_DIR$/index_test.html" />
-    <entry file="file://$PROJECT_DIR$/js/echarts.simple.min.js">
+    <entry file="file://$PROJECT_DIR$/static/js/echarts.simple.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
           <caret line="296" column="14" lean-forward="false" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/catalog.js">
+    <entry file="file://$PROJECT_DIR$/static/component/catalog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
@@ -718,7 +1023,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component/test/index.html" />
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
@@ -726,19 +1031,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lazyload.min.js" />
-    <entry file="file://$PROJECT_DIR$/component/header.js">
+    <entry file="file://$PROJECT_DIR$/static/component/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/user.png">
+    <entry file="file://$PROJECT_DIR$/static/images/user.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（下）.md">
+    <entry file="file://$PROJECT_DIR$/static/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（下）.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="252">
@@ -748,7 +1053,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（上）.md">
+    <entry file="file://$PROJECT_DIR$/static/blog/spring/深入学习 Spring Boot：Spring Boot启动分析（上）.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="633">
@@ -758,14 +1063,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/netty/config.json">
+    <entry file="file://$PROJECT_DIR$/static/blog/netty/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/spring/config.json">
+    <entry file="file://$PROJECT_DIR$/static/blog/spring/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -773,7 +1078,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component/test/article.html" />
-    <entry file="file://$PROJECT_DIR$/component/index.js">
+    <entry file="file://$PROJECT_DIR$/static/component/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
@@ -782,7 +1087,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/component/test/section.html" />
-    <entry file="file://$PROJECT_DIR$/component/footer.js">
+    <entry file="file://$PROJECT_DIR$/static/component/footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
@@ -792,7 +1097,7 @@
     <entry file="file://$PROJECT_DIR$/component/test/footer.html" />
     <entry file="file://$PROJECT_DIR$/head.html" />
     <entry file="file://$PROJECT_DIR$/head_article.html" />
-    <entry file="file://$PROJECT_DIR$/component/article.js">
+    <entry file="file://$PROJECT_DIR$/static/component/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="656">
           <caret line="60" column="3" lean-forward="true" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
@@ -814,21 +1119,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/zhuangqf.js">
+    <entry file="file://$PROJECT_DIR$/static/data/zhuangqf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="69" column="55" lean-forward="false" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/java/软件设计原则.md">
+    <entry file="file://$PROJECT_DIR$/static/blog/java/软件设计原则.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="144">
@@ -838,53 +1143,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content.html">
+    <entry file="file://$PROJECT_DIR$/static/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
+        <state relative-caret-position="870">
           <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/java/java.util 概述之集合框架.json">
+    <entry file="file://$PROJECT_DIR$/blog/java/java.util 概述之集合框架.json" />
+    <entry file="file://$PROJECT_DIR$/static/blog/java/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/java/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="540">
           <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/java/java.util 概述之集合框架.md">
+    <entry file="file://$PROJECT_DIR$/static/blog/java/java.util 概述之集合框架.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="468">
-            <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <first_editor relative-caret-position="1110">
+            <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/my.css">
+    <entry file="file://$PROJECT_DIR$/static/css/my.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
+        <state relative-caret-position="3390">
           <caret line="113" column="14" lean-forward="false" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
+    <entry file="file://$PROJECT_DIR$/static/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/java/com/zhuangqf/website/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding />
         </state>
       </provider>
