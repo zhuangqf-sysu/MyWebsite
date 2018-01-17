@@ -1,7 +1,5 @@
 # java.util 之Collection源码分析
 
-----
-
 *在[java.util 概述之集合框架](http://lovefadai.xyz/content.html?javaId=java.util%20%E6%A6%82%E8%BF%B0%E4%B9%8B%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6)中，我们简单了解了java的集合框架。现在让我们从源头上分析java集合框架的源码。*
 
 ### 方法总览
