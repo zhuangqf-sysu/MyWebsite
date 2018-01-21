@@ -30,7 +30,7 @@ Vue.component('my-section',{
         var progress = $.AMUI.progress;
         progress.start();
         $.get( this.url,function(data) {
-            var converter = new showdown.Converter();
+            var converter = new showdown.Converter({extensions: ['table']});
             var html = converter.makeHtml(data);
             self.html = html;
             progress.done();
