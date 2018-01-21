@@ -114,3 +114,18 @@
     display: block;
     margin:auto;
 }
+
+.my-comment-header {
+    /*background-color: green;*/
+    color: white;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (min-width:641px) {
+    .my-comment-header {
+        line-height: 48px;
+        font-size: 24px;
+    }
+}

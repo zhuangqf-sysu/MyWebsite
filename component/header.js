@@ -10,7 +10,6 @@ Vue.component("my-menu",{
                 '</ul>'+
             '</div>',
     mounted:function () {
-       console.log(this.$el);
         $(this.$el).find(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});
     }
 });

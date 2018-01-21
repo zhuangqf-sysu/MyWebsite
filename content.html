@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/header_style1.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/my.css">
-    <link rel="stylesheet" type="text/css" href="amazeui/css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="amazeui/css/amazeui.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/flexy-menu.js"></script>
@@ -39,6 +39,7 @@
     <my-section id="my-section" :html="html" :url="url" :icons="icons"></my-section>
     <my-reward id="my-reward" :url="url"></my-reward>
     <my-reward-modal id="my-reward-modal" :url="url"></my-reward-modal>
+    <my-comment-list id="myCommentList" :comments="comments"></my-comment-list>
     <my-footer id="my-footer" :icons="icons" :developer="developer"></my-footer>
     <my-record id="my-record" :record="record"></my-record>
 </body>
@@ -77,6 +78,16 @@
     var myRewardModal = new Vue({
         el: 'my-reward-modal',
         data:reward
+    });
+    $(document).ready(function () {
+        simplePost("comments.json",{},function (data) {
+            var myCommentList = new Vue({
+                el:'my-comment-list',
+                data:{
+                    comments:data
+                }
+            });
+        })
     });
 </script>
 </html>

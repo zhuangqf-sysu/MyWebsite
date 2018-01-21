@@ -59,3 +59,88 @@ Vue.component('my-reward',{
     '           </div>\n' +
     '        </div>'
 });
+
+Vue.component('my-comment-header',{
+    props:['name'],
+    computed:{
+        header:function () {
+            return this.name.substring(0,1);
+        },
+        style:function () {
+            var colors = ["#F06292", "#BA68C8", "#7986CB", "#64B5F6", "#4DD0E1", "#4DB6AC",
+                "#81C784", "#9CCC65", "#DCE775", "#FFF176", "#FFD54F", "#FFB74D", "#FF8A65"];
+            var temp = this.name.hashCode();
+            // return colors[temp % colors.length];
+            return "background-color:" + colors[temp % colors.length];
+        }
+    },
+    template:'<div class="am-comment-avatar my-comment-header" :style="style" >{{header}}</div>'
+});
+
+Vue.component('my-comment-hd',{
+    props:['name','time','reply'],
+    template:'<header class="am-comment-hd">' +
+    '           <div class="am-comment-meta">' +
+    '               <span class="am-comment-author">{{name}}</span>' +
+    '               <span v-if="reply.length > 0">回复<b>{{reply}}</b></span>' +
+    '               <time datetime="">{{time}}</time>' +
+    '           </div>' +
+    '         </header>'
+});
+
+Vue.component('my-comment-bd',{
+    props:['message'],
+    template:'<div class="am-comment-bd">{{message}}</div>'
+});
+
+Vue.component('my-comment-footer',{
+    props:['id'],
+    computed:{
+        thumbsUp:function () {
+            return "javascript:thumbsUp("+this.id+")";
+        },
+        thumbsDown:function () {
+            return "javascript:thumbsDown("+this.id+")";
+        },
+        reply:function () {
+            return "javascript:reply("+this.id+")";
+        }
+    },
+    template:'<footer class="am-comment-footer">' +
+    '           <div class="am-comment-actions">' +
+    '               <a :href="thumbsUp"><i class="am-icon-thumbs-up"></i></a>' +
+    '               <a :href="thumbsDown"><i class="am-icon-thumbs-down"></i></a>' +
+    '               <a :href="reply"><i class="am-icon-reply"></i></a>' +
+    '           </div>' +
+    '         </footer>'
+});
+
+Vue.component('my-comment',{
+    props:["comment"],
+    computed:{
+        isReply:function () {
+            if(this.comment.reply.length > 0) return "am-comment-flip";
+            else return "";
+        }
+    },
+    template:'<li class="am-comment" :class="isReply">' +
+    '           <my-comment-header :name="comment.name"></my-comment-header>' +
+    '           <div class="am-comment-main">' +
+    '               <my-comment-hd :name="comment.name" :time="comment.time" :reply="comment.reply"></my-comment-hd>' +
+    '               <my-comment-bd :message="comment.message"></my-comment-bd>' +
+    '               <my-comment-footer :id="comment.id"></my-comment-footer>' +
+    '           </div>' +
+    '        </li>'
+});
+
+Vue.component('my-comment-list',{
+    props:["comments"],
+    template:'<section class="am-g">' +
+    '           <div class="am-u-lg-7 am-u-md-8 am-u-sm-centered">' +
+    '           <h2>精彩评论</h2>' +
+    '           <ul class="am-comments-list am-comments-list-flip">' +
+    '               <my-comment v-for="comment in comments" :comment="comment"></my-comment>' +
+    '           </ul>' +
+    '           </div>' +
+    '         </section>'
+});
