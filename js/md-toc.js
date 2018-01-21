@@ -49,7 +49,10 @@
         this._tempLists = [];
 
         // 本页面的完整地址，某些情况下base标签和页面地址不一致，会造成锚点混乱
-        var url = location.origin+location.pathname;
+        // var url = location.origin+location.pathname;
+        var url = window.location.href;
+        var index = url.indexOf("#",0);
+        url = (index === -1)?url:url.substring(0,index);
         for(var i=0;i< this._elTitleElementsLen;i++){
             var j= i + 1;
             this._elTitleElement = this.elTitleElements[i];
