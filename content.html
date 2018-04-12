@@ -33,6 +33,13 @@
     <script src="component/footer.js"></script>
     <script src="component/article.js"></script>
     <script src="data/zhuangqf.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9893116584978154",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 <body>
     <header class="my-header" id="my-header"><my-header v-bind:title="title" v-bind:menu="menu"></my-header></header>
@@ -81,6 +88,7 @@
     });
     $(document).ready(function () {
         simplePost("comments.json",{},function (data) {
+            console.log(data);
             var myCommentList = new Vue({
                 el:'my-comment-list',
                 data:{

@@ -94,23 +94,23 @@ Vue.component('my-comment-bd',{
 });
 
 Vue.component('my-comment-footer',{
-    props:['id'],
+    props:['id','thumbsUp','thumbsDown'],
     computed:{
-        thumbsUp:function () {
+        thumbsUpFun:function () {
             return "javascript:thumbsUp("+this.id+")";
         },
-        thumbsDown:function () {
+        thumbsDownFun:function () {
             return "javascript:thumbsDown("+this.id+")";
         },
-        reply:function () {
+        replyFun:function () {
             return "javascript:reply("+this.id+")";
         }
     },
     template:'<footer class="am-comment-footer">' +
     '           <div class="am-comment-actions">' +
-    '               <a :href="thumbsUp"><i class="am-icon-thumbs-up"></i></a>' +
-    '               <a :href="thumbsDown"><i class="am-icon-thumbs-down"></i></a>' +
-    '               <a :href="reply"><i class="am-icon-reply"></i></a>' +
+    '               <a :href="thumbsUpFun"><i class="am-icon-thumbs-up">({{thumbsUp}})</i></a>' +
+    '               <a :href="thumbsDownFun"><i class="am-icon-thumbs-down">({{thumbsDown}})</i></a>' +
+    '               <a :href="replyFun"><i class="am-icon-reply"></i></a>' +
     '           </div>' +
     '         </footer>'
 });
@@ -128,7 +128,7 @@ Vue.component('my-comment',{
     '           <div class="am-comment-main">' +
     '               <my-comment-hd :name="comment.name" :time="comment.time" :reply="comment.reply"></my-comment-hd>' +
     '               <my-comment-bd :message="comment.message"></my-comment-bd>' +
-    '               <my-comment-footer :id="comment.id"></my-comment-footer>' +
+    '               <my-comment-footer :id="comment.id" :thumbsUp="comment.thumbsUp" :thumbsDown="comment.thumbsDown"></my-comment-footer>' +
     '           </div>' +
     '        </li>'
 });

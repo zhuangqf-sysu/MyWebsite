@@ -34,8 +34,10 @@ String.prototype.hashCode = function() {
     return hash;
 };
 
-var root = "http://localhost:63342/MyWebsite/data/";
+var root =  location.origin + "/MyWebsite/data/";
+
 function simplePost(url,data,callback) {
+
     $.ajax({
         type: "GET",
         url: root+url,
@@ -43,5 +45,5 @@ function simplePost(url,data,callback) {
         success: callback,
         contentType:"application/json; charset=UTF-8",
         dataType: "json"
-    })
+    });
 }
