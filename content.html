@@ -87,7 +87,7 @@
         data:reward
     });
     $(document).ready(function () {
-        simplePost("./data/comments.json",{},function (data) {
+        simplePost("comments.json",{},function (data) {
             console.log(data);
             var myCommentList = new Vue({
                 el:'my-comment-list',

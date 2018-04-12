@@ -34,7 +34,7 @@ String.prototype.hashCode = function() {
     return hash;
 };
 
-var root =  location.origin + "/MyWebsite/data/";
+var root =  location.origin + "/data/";
 
 function simplePost(url,data,callback) {
 
